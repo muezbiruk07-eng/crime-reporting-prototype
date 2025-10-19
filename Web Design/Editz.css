@@ -1,0 +1,577 @@
+* { 
+    margin: 0;
+    padding: 0;
+    font-family: "Cabin", sans-serif;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('HomePage.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #5067ee;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.text-box {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 50px;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: white;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    font-size: 13px;
+    padding: 12px 34px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid #5067ee;
+    background: #5067ee;
+    transition: 1s;
+}
+
+nav .fa {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .text-box h1 {
+        font-size: 20px;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        background: #5067ee;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+        position: fixed;
+    }
+
+    nav .fa {
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .nav-links ul {
+        padding: 30px;
+    }
+}
+
+.service {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+h2 { 
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px;
+}
+
+p {
+    color: rgb(121, 121, 121);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.service-col {
+    flex-basis: 31%;
+    background: rgb(228, 242, 250);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.service-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 700px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.station {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.station-col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.station-col img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover {
+    background: rgba(194, 234, 253, 0.7);
+}
+
+.layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 22px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+}
+
+@media (max-width: 700px) {
+    .station {
+        align-items: center;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .station-col {
+        width: 90%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .station-col img {
+        width: 100%;
+        max-height: 250px;
+        object-fit: cover;
+        display: block;
+    }
+}
+/*-----Footer---*/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600px;
+}
+.icons .fa{
+    color: #5067ee;
+    margin: 0 13px;
+    cursor: pointer;
+    padding:  8px 0;
+}
+/*----- About Us Page -----*/
+.sub-header {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('Aboout2.jpeg');
+    background-position: left center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+.sub-header h1{
+    margin-top: 100px;
+}
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.about-col{
+    flex-basis: 48%;
+    padding: 20px 30px;
+}
+.about-col img {
+    width: 130%;
+    margin: auto;
+}
+.about-col h1{
+    padding-top: 0px;
+}
+.about-col p{
+    padding: 15px 0px 25px;
+}
+.red-btn{
+    border: 1px solid #5067ee;
+    background: transparent;
+    color: #5067ee;
+}
+.red-btn:hover{
+    color: #fff;
+}
+@media (max-width: 700px) {
+    .about-col img {
+        width: 100%;
+        margin: auto;
+    }    
+}   
+/*---- Login Page ----*/
+.Login-container{
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('OIP.jpeg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+.login .login-form{
+    width: 420px;
+    color: #fff;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 30px 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+.login .login-form h2{
+    font-size: 30px;
+    text-align: center;
+}
+.login .login-form .form-group{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+.form-group input{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    color: white;
+    padding: 20px 45px 20px 20;
+    font-size: 16px;
+    
+}
+.form-group input::placeholder{
+    color: white;
+}
+select {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    color: white;
+    padding: 20px 45px 20px 20;
+    font-size: 16px;
+    
+}
+.login .login-form .form-group option{
+    background: transparent;
+    color: #333;
+}
+.form-group i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+.login-form .forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0px 15px;
+}
+.forgot label input{
+    accent-color: #fff;
+    margin-right: 4px;
+}
+.forgot a{
+    color: white;
+    text-decoration: none;
+}
+.forgot a:hover{
+    text-decoration: underline;
+    margin-left: 5px;
+}
+.login-form .btn{
+    margin: 0 30px;
+    height: 45px;
+    width: 30%;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    font-weight: 600;
+}
+.login-form .btn:hover{
+    background-color: #5067ee;
+    color: white;
+    transition: 0.5s all ease;
+}
+.login-form .signup{
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px 0 15px;
+}
+.signup a{
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+.signup a:hover{
+    text-decoration: underline;
+}
+/*---- Contact Us page ----*/
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.location iframe{
+    width: 100%;
+}
+.contact-us{
+    margin: auto;
+    width: 80%;
+}
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.contact-col div .fa{
+    font-size: 20px;
+    color: #5067ee;
+    margin: 10px;
+    margin-right: 30px;
+}
+.contact-col div p{
+    padding: 0;
+}
+.contact-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    border: 1px solid #ccc;
+    outline: none;
+    box-sizing: border-box;
+}
+.contact-col form label{
+    margin-bottom: 5px;
+}
+/*---- Report Crime Page ----*/
+.report-crime{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.report-col{
+    display: flex;
+    margin: auto;
+    flex-basis: 48%;
+    background-color: rgb(228, 242, 250);
+    width: 100px;
+    height: 300px;
+    border-radius: 10px;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: -20px;
+}
+.report-col:hover{
+   transition: 0.3s ease-in-out;
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.report-col h5{
+    margin-top: -50px;
+    font-size:  19px;
+    line-height: 1.5;
+    font-weight: 400;
+    padding: 20px 30px;
+    color: #555;
+}
+.crime{
+    flex-basis: 48%;
+}
+.crime label{
+    color: #555;
+}
+.crime input{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    border: 1px solid #ccc;
+    outline: none;
+    box-sizing: border-box;
+    margin: 10px 0;
+}
+.crime select{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    border: 1px solid #ccc;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 0px;
+    color: #555;
+    margin: 10px 0;
+}
+.crime textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    border: 1px solid #ccc;
+    outline: none;
+    box-sizing: border-box;
+    margin: 10px 0;
+}
+.crime-btn button{
+    margin-right: 50px;
+    margin-top: 10px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove</title>
+    <link rel="stylesheet" href="Form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="nav-top">
+        <div class="logo">
+            <img src="Logo-tiny.png">
+        </div>
+        <div class="nav-top-right">
+            <div class="logout"><a href="Home.html">Home</a></div>
+            <div class="logout"><a href="Home.html">Logout</a></div>
+        </div>
+    </div>
+    <div class="rows">
+    <div class="nav-left">
+        <div class="inline-nav">
+            <div class="add"><i class="fa fa-plus-square-o"></i>  <a href="Chief.html">Add Actors</a></div>
+            <div class="update"><i class="fa fa-pencil-square-o"></i>  <a href="Chief2.html">Update Actors</a></div>
+            <div class="remove"><i class="fa fa-trash-o"></i>  <a href="Chief3.html">Remove Actors</a></div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main1">
+        <div class="info">
+            <p>Remove existing police officer information here.</p>
+        </div>
+        <div class="login">
+            <form class="login-form" method="POST" action="Remove.php">
+                <h2>Remove Actor</h2>
+            
+                <div class="form-group">
+                    <label for="aid">Actor ID:</label>
+                    <input type="text" id="aid" name="aid" pattern="[A-Za-z]{1,2}[0-9]{2}" placeholder="Enter ID (e.g., L01)" required>
+                </div>
+                <p>Note: The system will remove the actor associated with the provided ID.</p>
+                <div class="form-group">
+                    <button type="submit" class="btn" name="remove">Remove</button>
+                    <button type="reset" class="btn">Clear</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

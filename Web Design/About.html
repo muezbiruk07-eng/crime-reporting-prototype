@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us</title>
+        <link rel="stylesheet" href="Editz.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="Online.html"><img src="Logo-tiny.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="Home.html">HOME</a></li>
+                        <li><a href="About.html">ABOUT</a></li>
+                        <li><a href="Login.html">LOGIN</a></li>
+                        <li><a href="REPORT CRIME.html">REPORT CRIME</a></li>
+                        <li><a href="CONTACT US.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars"  onclick="showMenu()"></i>
+            </nav>
+            <h1>About Us</h1>
+        </section>
+<!----- About Us content ----->
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>We ensure safety and secuirty of our citizens</h1>
+            <p>
+                The police station overseeing the Lamberet district plays a vital role in maintaining law and order within the area. 
+                Tasked with ensuring the safety and security of residents, it diligently patrols neighborhoods, responds to emergencies, 
+                and enforces local regulations. By fostering strong community relationships, 
+                the station works to prevent crime and address concerns, creating a secure environment for businesses and families alike. 
+                Its dedicated officers serve as a crucial pillar of stability, ensuring that Lamberet remains a well-protected and orderly district. 
+            </p>
+            <a href="" class="hero-btn red-btn">Explore Now</a>
+        </div>
+        <div class="about-col">
+            <img src="About2.jpg">         
+        </div>
+    </div>
+</section>
+<!----- Footer ----->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>The Online Police Management System is designed to enhance efficiency in law enforcement operations by providing a streamlined, secure, and accessible platform for police personnel and the public. Our mission 
+        is to simplify police processes, improve public safety, and create a more organized approach to crime reporting and case management.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-telegram"></i>    
+        </div>
+       
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!----- JavaScript for toggle menu ----->
+        <script>
+            var navLinks= document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+                function hideMenu(){
+                    navLinks.style.right = "-200px"; 
+            }
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

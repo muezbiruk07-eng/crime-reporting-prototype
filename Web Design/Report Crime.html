@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Report crime</title>
+        <link rel="stylesheet" href="Editz.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="Online.html"><img src="Logo-tiny.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="Home.html">HOME</a></li>
+                        <li><a href="About.html">ABOUT</a></li>
+                        <li><a href="Login.html">LOGIN</a></li>
+                        <li><a href="REPORT CRIME.html">REPORT CRIME</a></li>
+                        <li><a href="CONTACT US.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars"  onclick="showMenu()"></i>
+            </nav>
+            <h1>Report Crime</h1>
+        </section>
+<!----- Report crime content ----->
+<section class="report-crime">
+    <div class="row">
+        <div class="report-col">
+            <h5>Report live crimes here for an immediate response and swift action, ensuring authorities can intervene as quickly as possible. Your timely report helps protect the community, prevent harm, and bring justice to those affected</h5>
+        </div>
+        <div class="crime">
+            <form action="" method="get">
+                <label for="crimeType">Select the type of crime</label>
+                <select id="crimeType" name="crimetype" title="Choose the crime type from the list" aria-label="Crime Type Selection" required>
+                    <option value="theft">Theft</option>
+                    <option value="assault">Assault</option>
+                    <option value="fraud">Fraud</option>
+                    <option value="vandalism">Vandalism</option>
+                    <option value="cybercrime">Cybercrime</option>
+                    <option value="other">Other</option>
+                </select>
+                
+                <label for="crimeDateTime">Date & Time of Crime</label>
+                <input type="datetime-local" id="crimeDateTime" name="crimeDateTime" placeholder="Enter the date of the crime" required> 
+                <label for="crimedetails">Crime Details</label> 
+                <textarea name="message" rows="8" placeholder="Enter details about the crime" required></textarea> 
+                <div class="crime-btn">
+                <button type="button" class="hero-btn red-btn">Submit</button>
+                <button type="clear" class="hero-btn red-btn">Clear</button> 
+                </div> 
+            </form>
+        </div>
+    </div>
+</section>
+<!----- Footer ----->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>The Online Police Management System is designed to enhance efficiency in law enforcement operations by providing a streamlined, secure, and accessible platform for police personnel and the public. Our mission 
+        is to simplify police processes, improve public safety, and create a more organized approach to crime reporting and case management.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-telegram"></i>    
+        </div>
+       
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!----- JavaScript for toggle menu ----->
+        <script>
+            var navLinks= document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+                function hideMenu(){
+                    navLinks.style.right = "-200px"; 
+            }
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
